@@ -2,7 +2,7 @@
   "mcpServers": {
     "awardtravelfinder": {
       "command": "npx",
-      "args": ["mcp-remote", "https://mcp.awardtravelfinder.com/mcp"]
+      "args": ["mcp-remote@0.1.38", "https://mcp.awardtravelfinder.com/mcp"]
     }
   }
 }
