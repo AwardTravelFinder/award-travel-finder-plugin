@@ -118,7 +118,8 @@ mcp/
     compare-programs.md  # /atf:compare-programs
   skills/
     award-travel/        # Activates on award-travel questions
-    marriott-folio-audit/
+  openclaw/
+    SKILL.md             # OpenClaw-flavoured variant of the same skill
 ```
 
 The MCP server itself is a hosted service at `mcp.awardtravelfinder.com`; this repo holds the manifests and client-facing docs, not the server implementation.

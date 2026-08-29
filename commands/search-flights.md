@@ -11,7 +11,7 @@ allowed-tools:
 
 # Search Award Flights
 
-The user wants to search for award flight availability across the 19 airlines supported by Award Travel Finder.
+The user wants to search for award flight availability across the 27 airlines supported by Award Travel Finder.
 
 ## Arguments
 

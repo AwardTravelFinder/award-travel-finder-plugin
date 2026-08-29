@@ -6,7 +6,7 @@ version: 1.0.0
 
 # Award Travel Finder
 
-Search award flight availability across 19 airlines and 14 loyalty programs using points and miles. Powered by the Award Travel Finder MCP server.
+Search award flight availability across 27 airlines and 23 loyalty programs using points and miles. Powered by the Award Travel Finder MCP server.
 
 ## Available MCP Tools
 
@@ -106,4 +106,4 @@ The MCP server uses OAuth 2.1 by default. On first tool call, the client redirec
 
 Free tier: **50 searches/month** per account. Paid tiers (150/month and up) at https://awardtravelfinder.com/pricing for power users.
 
-X-API-Key headers are still supported for legacy clients and server-to-server agents.
+There is no API key, and you must not send an `Authorization` or `X-API-Key` header. API-key auth was retired on 2026-06-07; a static header overrides the OAuth token and every request then 401s despite a successful sign-in.

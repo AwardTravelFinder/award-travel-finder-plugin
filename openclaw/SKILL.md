@@ -1,12 +1,12 @@
 ---
 name: award-travel-finder
-description: Search award flight availability across 19 airlines and compare 14 loyalty program award charts via the Award Travel Finder MCP server. Find the best points and miles redemptions across British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Aeroplan, Iberia, Emirates, Qantas, Alaska, American, JetBlue, ANA, Singapore, Turkish, Etihad, Flying Blue, and more.
+description: Search award flight availability across 27 airlines and compare 23 loyalty program award charts via the Award Travel Finder MCP server. Find the best points and miles redemptions across British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Aeroplan, Iberia, Emirates, Qantas, Alaska, American, JetBlue, ANA, Singapore, Turkish, Etihad, Flying Blue, and more.
 homepage: https://awardtravelfinder.com/claude
 ---
 
 # Award Travel Finder
 
-Search award flight availability and compare loyalty program award charts via the Award Travel Finder MCP server. 19 airlines, 14 loyalty programs, one prompt.
+Search award flight availability and compare loyalty program award charts via the Award Travel Finder MCP server. 27 airlines, 23 loyalty programs, one prompt.
 
 ## Setup
 
@@ -36,9 +36,9 @@ Add to your MCP config:
 
 OAuth-aware clients sign you in on first call automatically. For clients without native OAuth, use `npx mcp-remote https://mcp.awardtravelfinder.com/mcp`.
 
-### Legacy X-API-Key
+### Do not send an API key
 
-Header-based auth is still supported for users who configured it pre-OAuth, or for server-to-server agents. Generate a key at [awardtravelfinder.com/pricing](https://awardtravelfinder.com/pricing) and pass `X-API-Key: atf_...`.
+There is no API key. API-key authentication was retired on 2026-06-07. A static `Authorization` or `X-API-Key` header overrides the OAuth token the client obtained, so every request 401s even though sign-in appeared to succeed.
 
 ## Available Tools (21)
 
