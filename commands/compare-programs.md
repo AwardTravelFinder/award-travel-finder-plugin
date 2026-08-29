@@ -8,7 +8,7 @@ allowed-tools:
 
 # Compare Loyalty Programs
 
-The user wants to compare loyalty program award charts across the 14 programs Award Travel Finder supports.
+The user wants to compare loyalty program award charts across the 23 programs Award Travel Finder supports.
 
 ## Arguments
 
