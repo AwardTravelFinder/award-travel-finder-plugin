@@ -1,9 +1,22 @@
 {
   "name": "award-travel-finder",
-  "description": "Search award flight availability across 19 airlines (British Airways, Qatar, Cathay, Virgin Atlantic, Aeroplan, Iberia, Emirates, Qantas, Alaska, American, and more) and compare 14 loyalty program award charts. Free with a free awardtravelfinder.com account (50 searches/month).",
+  "description": "Search award flight availability across 27 airlines, award-chart pricing for 23 loyalty programs, and award nights at Marriott, Hilton, IHG and Hyatt. 96 tools, OAuth sign-in, no API key.",
   "author": {
     "name": "Award Travel Finder",
     "url": "https://awardtravelfinder.com"
   },
-  "version": "1.0.0"
+  "homepage": "https://awardtravelfinder.com/mcp",
+  "repository": "https://github.com/AwardTravelFinder/award-travel-finder-plugin",
+  "license": "MIT",
+  "keywords": [
+    "travel",
+    "flights",
+    "airlines",
+    "award-travel",
+    "points",
+    "miles",
+    "loyalty",
+    "aviation"
+  ],
+  "version": "1.1.0"
 }
