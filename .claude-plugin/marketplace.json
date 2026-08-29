@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "award-travel-finder",
-  "version": "1.0.0",
-  "description": "Search award flight availability across 19 airlines and compare 14 loyalty programs",
+  "version": "1.1.0",
+  "description": "Search award flight availability and compare loyalty programs",
   "owner": {
     "name": "Award Travel Finder",
     "url": "https://awardtravelfinder.com"
@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "award-travel-finder",
-      "description": "Search award flight availability across 19 airlines (British Airways, Qatar, Cathay, Virgin Atlantic, Aeroplan, Iberia, Emirates, Qantas, Alaska, American, and more) and compare 14 loyalty program award charts. Free with a free awardtravelfinder.com account (50 searches/month).",
+      "description": "Search award flight availability across 27 airlines, award-chart pricing for 23 loyalty programs, and award nights at Marriott, Hilton, IHG and Hyatt. 96 tools, OAuth sign-in, no API key.",
       "source": "./",
       "category": "productivity"
     }
