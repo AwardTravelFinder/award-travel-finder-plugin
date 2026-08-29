@@ -13,6 +13,12 @@ Search award flight availability, compare loyalty programs, and find the best po
 /plugin install award-travel-finder
 ```
 
+### Gemini CLI / Antigravity
+
+```
+gemini extensions install https://github.com/AwardTravelFinder/mcp
+```
+
 ### Any other MCP client
 
 Point your client at the endpoint:
@@ -107,6 +113,7 @@ This repo is the public home for every Award Travel Finder AI and MCP surface â€
 ```
 mcp/
   server.json            # Official MCP registry manifest
+  gemini-extension.json  # Gemini CLI / Antigravity extension manifest
   .claude-plugin/
     plugin.json          # Plugin metadata
     marketplace.json     # Marketplace listing
