@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.awardtravelfinder/mcp",
+  "title": "Award Travel Finder",
+  "description": "Search award flight availability across 27 airlines, award-chart pricing for 23 loyalty programs, and award nights at Marriott, Hilton, IHG and Hyatt.",
+  "repository": {
+    "url": "https://github.com/AwardTravelFinder/mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://awardtravelfinder.com/mcp",
+  "version": "3.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.awardtravelfinder.com/mcp"
+    }
+  ]
+}

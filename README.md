@@ -9,7 +9,7 @@ Search award flight availability, compare loyalty programs, and find the best po
 ### Claude Code plugin (recommended)
 
 ```
-/plugin marketplace add AwardTravelFinder/award-travel-finder-plugin
+/plugin marketplace add AwardTravelFinder/mcp
 /plugin install award-travel-finder
 ```
 
@@ -100,10 +100,13 @@ British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Iberia, Emirate
 
 Run `tools/list` against the endpoint for the full catalogue — it answers without authentication, so you can inspect the server before signing in.
 
-## Plugin structure
+## Repository structure
+
+This repo is the public home for every Award Travel Finder AI and MCP surface — the Claude Code plugin, the MCP server manifest we publish to the official registry, and the metadata directories index.
 
 ```
-award-travel-finder-plugin/
+mcp/
+  server.json            # Official MCP registry manifest
   .claude-plugin/
     plugin.json          # Plugin metadata
     marketplace.json     # Marketplace listing
@@ -118,12 +121,18 @@ award-travel-finder-plugin/
     marriott-folio-audit/
 ```
 
+The MCP server itself is a hosted service at `mcp.awardtravelfinder.com`; this repo holds the manifests and client-facing docs, not the server implementation.
+
 ## Links
 
 - [Award Travel Finder](https://awardtravelfinder.com) — the web app
 - [Setup guides for every client](https://awardtravelfinder.com/mcp)
 - [Transfer bonus tracker](https://awardtravelfinder.com/transfer-bonuses)
 - [Pricing](https://awardtravelfinder.com/pricing)
+
+## Support
+
+Open an issue here, or email [support@awardtravelfinder.com](mailto:support@awardtravelfinder.com).
 
 ## License
 
