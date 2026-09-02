@@ -1,6 +1,6 @@
 # Award Travel Finder — Claude Code Plugin & MCP Server
 
-Search award flight availability, compare loyalty programs, and find the best points redemptions from your AI assistant. This plugin connects to the [Award Travel Finder](https://awardtravelfinder.com) MCP server, which exposes 96 award-travel tools over a single hosted endpoint.
+Search award flight availability, compare loyalty programs, and find the best points redemptions from your AI assistant. This plugin connects to the [Award Travel Finder](https://awardtravelfinder.com) MCP server, which exposes 127 award-travel tools over a single hosted endpoint.
 
 **Works with Claude Code, Claude Desktop, Cursor, Windsurf, ChatGPT, Grok, Antigravity, and any MCP-compatible client.**
 
@@ -86,7 +86,7 @@ British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Iberia, Emirate
 
 ## Tools
 
-96 tools in total. The most-used ones:
+127 tools in total. The most-used ones:
 
 | Tool | What it does |
 |------|--------------|

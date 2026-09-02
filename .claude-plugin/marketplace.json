@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "award-travel-finder",
-      "description": "Search award flight availability across 27 airlines, award-chart pricing for 23 loyalty programs, and award nights at Marriott, Hilton, IHG and Hyatt. 96 tools, OAuth sign-in, no API key.",
+      "description": "Search award flight availability across 27 airlines, award-chart pricing for 23 loyalty programs, and award nights at Marriott, Hilton, IHG and Hyatt. 127 tools, OAuth sign-in, no API key.",
       "source": "./",
       "category": "productivity"
     }
