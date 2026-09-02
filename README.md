@@ -72,11 +72,11 @@ Or use the slash commands:
 
 ## Coverage
 
-**27 airlines** can be searched one at a time with `search_availability`:
+**28 airlines** can be searched one at a time with `search_availability`:
 
-British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Iberia, Emirates, Qantas, Alaska Airlines, American Airlines, JetBlue, Frontier, Southwest, Delta, Japan Airlines, United, TAP Portugal, Cape Air, Icelandair, Condor, Aer Lingus, El Al, Turkish Airlines, ANA, Lufthansa, Air France, KLM, Etihad.
+British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Iberia, Emirates, Qantas, Alaska Airlines, American Airlines, JetBlue, Frontier, Southwest, Delta, Japan Airlines, United, TAP Portugal, Cape Air, Icelandair, Condor, Aer Lingus, El Al, Turkish Airlines, ANA, Lufthansa, Air France, KLM, Etihad, Smiles (GOL).
 
-**9 of those** are in the `search_all_airlines` fan-out, which sweeps them together in one call: British Airways, Cathay Pacific, Virgin Atlantic, Iberia, Qatar Airways, Alaska Airlines, JetBlue, Frontier, Southwest. Award inventory is genuinely sparse, so a route with no results usually means no seats rather than a broken search.
+**11 of those** are in the `search_all_airlines` fan-out, which sweeps them together in one call: British Airways, Cathay Pacific, Virgin Atlantic, Iberia, Qatar Airways, Alaska Airlines, JetBlue, Frontier, Southwest, Qantas, Smiles (GOL). Award inventory is genuinely sparse, so a route with no results usually means no seats rather than a broken search.
 
 **23 loyalty programs** have award-chart data via `get_program_rates`:
 

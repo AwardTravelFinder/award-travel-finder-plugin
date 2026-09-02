@@ -6,7 +6,7 @@ version: 1.0.0
 
 # Award Travel Finder
 
-Search award flight availability across 27 airlines and 23 loyalty programs using points and miles. Powered by the Award Travel Finder MCP server.
+Search award flight availability across 28 airlines and 23 loyalty programs using points and miles. Powered by the Award Travel Finder MCP server.
 
 ## Available MCP Tools
 
