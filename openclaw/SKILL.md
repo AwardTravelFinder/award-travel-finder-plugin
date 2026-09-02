@@ -1,12 +1,12 @@
 ---
 name: award-travel-finder
-description: Search award flight availability across 27 airlines and compare 23 loyalty program award charts via the Award Travel Finder MCP server. Find the best points and miles redemptions across British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Aeroplan, Iberia, Emirates, Qantas, Alaska, American, JetBlue, ANA, Singapore, Turkish, Etihad, Flying Blue, and more.
+description: Search award flight availability across 28 airlines and compare 23 loyalty program award charts via the Award Travel Finder MCP server. Find the best points and miles redemptions across British Airways, Qatar Airways, Cathay Pacific, Virgin Atlantic, Aeroplan, Iberia, Emirates, Qantas, Alaska, American, JetBlue, ANA, Singapore, Turkish, Etihad, Flying Blue, and more.
 homepage: https://awardtravelfinder.com/claude
 ---
 
 # Award Travel Finder
 
-Search award flight availability and compare loyalty program award charts via the Award Travel Finder MCP server. 27 airlines, 23 loyalty programs, one prompt.
+Search award flight availability and compare loyalty program award charts via the Award Travel Finder MCP server. 28 airlines, 23 loyalty programs, one prompt.
 
 ## Setup
 

@@ -72,7 +72,7 @@ seconds and needs no payment card. After they authorize, the call completes.
 - Award inventory is genuinely sparse. An empty result usually means there are no
   seats on that route and date, not that the search failed. Suggest nearby dates
   or a different airline rather than retrying the identical query.
-- 27 airlines can be searched individually; `search_all_airlines` sweeps 9 of them
+- 28 airlines can be searched individually; `search_all_airlines` sweeps 11 of them
   at once. Prefer `search_all_airlines` when the user has not named an airline.
 
 ## Troubleshooting
