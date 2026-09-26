@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `compare_transfer_options`, `add_flight_booking`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 Rule 1: never tell the user to transfer points before the seat shows live on the booking programme's website. Transfers cannot be reversed.
 
 ## 1. Confirm the award

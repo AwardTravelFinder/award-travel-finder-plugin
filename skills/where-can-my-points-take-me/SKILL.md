@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `update_points_balance`, `search_monthly_availability`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 Goal: 3-5 trips the user can book with the points they already hold.
 
 ## 1. Read the balances

@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `search_monthly_availability`, `search_multi_passenger`, `search_hybrid`, `plan_trip`, `compare_transfer_options`, `add_flight_booking`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 Goal: one recommended award the user can book today, plus one fallback.
 
 ## 1. Collect the inputs
@@ -17,7 +19,8 @@ You need origin, destination, dates, cabin and passengers.
 - Read the session preamble first. If it is empty or stale, call `get_portfolio`.
 - Use `list_points_balances` to learn which currencies the user holds.
 - Ask the user only for inputs that are still unknown. Ask all of them in one message.
-- Default to 1 passenger and economy only if the user says "any cabin".
+- If the user does not give a passenger count, use 1.
+- Cabin: if the user does not name one, ask. If the user says "any cabin" or "cheapest", search economy and show business as a second option.
 
 ## 2. Check the booking window
 

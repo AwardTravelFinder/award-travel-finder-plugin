@@ -8,14 +8,18 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `get_trip_briefing`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 ## 1. Find the flight
 
 - If the user gave no flight, call `list_flight_bookings` and pick the next departure.
-- Call `lookup_flight` with the flight number and date for times, aircraft and status.
+- Call `lookup_flight` with the flight number to confirm the airline. It returns carrier identity only, not times, aircraft or status.
+- Get origin and destination from the booking. Ask the user only if they are still unknown.
 
 ## 2. Briefing
 
-- Call `get_trip_briefing` with flight number, date, origin and destination. It returns seatmap, delay and security-wait data.
+- Call `get_trip_briefing` with flight number, date, origin and destination. It returns aircraft and seatmap data, plus airport delay and security-wait snapshots.
+- Live flight status (departure time, gate, delay for this flight) is not part of these tools. If a live flight status tool is available, use it. If not, tell the user to check the airline app on the day.
 
 ## 3. Seat
 

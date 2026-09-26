@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `search_monthly_availability`, `update_flight_booking`, `delete_flight_booking`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 ## 1. Find the booking
 
 - Call `list_flight_bookings`. Match by confirmation number, route or date.

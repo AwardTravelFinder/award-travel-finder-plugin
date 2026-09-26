@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `list_standing_orders`, `list_hotel_bookings`, `monitor_hotel_price`, `create_standing_order`, `cancel_standing_order`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 ## 1. Check what exists
 
 - Call `list_route_monitors`, `list_standing_orders` and `list_hotel_bookings`.

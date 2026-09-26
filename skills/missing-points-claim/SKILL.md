@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `list_hotel_bookings`, `audit_marriott_folio`, `audit_hotel_folio`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 ## 1. Collect the folio
 
 - Ask the user to paste the folio text if it is not in the chat.
@@ -22,7 +24,7 @@ The tools named below are on the Award Travel Finder MCP connector. If they are 
 
 ## 3. Missing points
 
-- Points not posted after 14 days are claimable.
+- The typical posting delay varies by programme; many say 2-6 weeks. Check the chain's own rule before you call the points missing, and say when the user can file a claim.
 - Estimate the missing points from the paid room rate and the chain's base earn plus the elite bonus. Say it is an estimate.
 
 ## 4. Write the claim

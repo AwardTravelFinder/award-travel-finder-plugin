@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `search_monthly_availability`, `compare_transfer_options`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 Rule: a bonus is only good if there is a redemption to spend the points on. Never transfer speculatively into a programme with no use in sight.
 
 ## 1. Find the bonus

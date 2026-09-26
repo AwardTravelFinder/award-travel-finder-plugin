@@ -8,6 +8,8 @@ version: 1.0.0
 
 The tools named below are on the Award Travel Finder MCP connector. If they are not available, tell the user to connect https://mcp.awardtravelfinder.com/mcp (setup: https://awardtravelfinder.com/developers/mcp).
 
+> **Plan:** needs Premium: `search_multi_passenger`, `search_monthly_availability`, `compare_transfer_options`; needs Pro: `create_client_portfolio`, `generate_branded_pdf`. If the user is on the free plan, tell them before you call these tools, and use the free steps where the skill gives one.
+
 ## 1. Collect the inputs
 
 - Need origin, destination, dates, cabin and passenger count. Ask only for what is unknown.

@@ -81,7 +81,7 @@ Step-by-step playbooks that run on the Award Travel Finder tools. Claude picks t
 | `book-award-step-by-step` | Safe booking checklist: confirm space, hold, transfer, ticket |
 | `maximize-transfer-bonus` | Is a live transfer bonus worth using, and how many points to move |
 | `check-trip-before-departure` | Pre-flight brief: seat, lounges, wifi, airport waits, reprice check |
-| `hotel-price-drop-rebook` | Track a hotel stay and rebook when the rate drops |
+| `hotel-price-drop-rebook` | Track an award hotel stay and rebook when the points rate drops |
 | `missing-points-claim` | Audit a hotel folio and write the missing-points or dispute claim |
 | `status-match-and-challenge` | Cheapest path to an elite tier: match, challenge, earn or run |
 | `audit-my-portfolio` | Value every balance and flag idle or expiring points |
