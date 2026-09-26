@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "award-travel-finder",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Search award flight availability and compare loyalty programs",
   "owner": {
     "name": "Award Travel Finder",
