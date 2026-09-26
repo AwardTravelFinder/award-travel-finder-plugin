@@ -14,30 +14,30 @@ Goal: 3-5 trips the user can book with the points they already hold.
 
 ## 1. Read the balances
 
-- Call `list_points_balances`. If it is empty, ask the user for their main balances and save each one with `update_points_balance`.
+- Call `list_points_balances`. If it is empty, ask the user for their main balances. Premium users can save them with `update_points_balance`. For free users, pass one balance straight to step 2.
 - Call `get_portfolio` for home airport and past destinations when the origin is unknown.
 - Ask only for origin, month and cabin if they are still unknown.
 
-## 2. Find the reachable programmes
+## 2. Find destinations
 
-- For each transferable currency, call `find_transfer_paths` to the airline programmes that matter for this origin.
-- Check `whats_on_sale` for transfer bonuses. A bonus can put a trip in reach.
-- Load `get_skill` with key award-sweet-spots to pick candidate destinations.
+- Call `explore_destinations` with origin, cabin and the month range. It uses the saved balances, or a points balance and programme you pass. It lists destinations with award seats, cheapest first, and says which ones the balances cover directly or through transfer partners.
+- Free accounts see the top 3 destinations. Say so if the user is on the free plan.
+- The data is cached. Each row shows its age.
 
-## 3. Check live seats
+## 3. Confirm live seats
 
-- Pick 4-6 candidate routes from the sweet spots that match the origin and cabin.
-- For each, call `search_monthly_availability` for the month.
-- Drop any route with no seats in the month.
+- For the 3-5 best reachable destinations, call `search_all_airlines` for a date in the month. Premium users can call `search_monthly_availability` for the whole month.
+- Drop any destination with no live seats.
 
 ## 4. Cost each trip
 
-- Compare points needed with the user's balances after transfer.
-- Call `get_points_valuation` to show cents per point.
+- Call `estimate_award_fees` for each route and cabin to show the taxes and surcharges per programme. Say they are estimates.
+- Call `compare_cash_vs_points` for the top pick, so the user sees if points beat cash for that trip.
+- For a destination reachable only through a transfer, call `find_transfer_paths`. Check `whats_on_sale` for a transfer bonus.
 - Mark a trip "reachable" only if balance + bonus covers the points for all passengers.
 
 ## Output format
 
-A table: destination, programme, cabin, points per person, taxes, best dates, reachable yes/no.
-Then one line per trip on how to pay (transfer path).
+A table: destination, programme, cabin, points per person, estimated taxes, best dates, reachable yes/no.
+Then one line per trip on how to pay (transfer path), and one line on cash vs points for the top pick.
 End with: "Say a destination and I will run the full plan." Use the plan-award-trip skill for that.

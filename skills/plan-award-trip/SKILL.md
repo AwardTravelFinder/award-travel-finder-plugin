@@ -40,6 +40,8 @@ You need origin, destination, dates, cabin and passengers.
 - Rank by total cost: points x cents-per-point + taxes. Call `get_points_valuation` for each currency you compare.
 - Flag a known sweet spot. Load `get_skill` with key award-sweet-spots when you are not sure.
 - For a partner flight, call `get_partner_award_options` to find every programme that can ticket it.
+- When the search result has no taxes, call `estimate_award_fees` for the route and cabin. Say the taxes are estimates.
+- Call `compare_cash_vs_points` for the best option. If cash is cheaper than the points value, say so.
 
 ## 5. Find the transfer path
 
