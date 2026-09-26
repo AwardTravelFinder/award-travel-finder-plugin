@@ -1,6 +1,6 @@
 ---
 name: check-trip-before-departure
-description: "A pre-flight briefing - flight status, seat, lounges, wifi, airport waits, and a reprice check on the award. Use when the user has a flight in the next 2 weeks, or asks \"am I ready for my trip?\". Requires the Award Travel Finder MCP connector (https://mcp.awardtravelfinder.com/mcp)."
+description: "A pre-flight briefing - aircraft and seat, lounges, wifi, airport delays and security waits, and a reprice check on the award. Use when the user has a flight in the next 2 weeks, or asks \"am I ready for my trip?\". Requires the Award Travel Finder MCP connector (https://mcp.awardtravelfinder.com/mcp)."
 version: 1.0.0
 ---
 
