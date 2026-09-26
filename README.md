@@ -70,6 +70,27 @@ Or use the slash commands:
 /atf:compare-programs british-airways emirates
 ```
 
+## Task skills
+
+Step-by-step playbooks that run on the Award Travel Finder tools. Claude picks the right one on its own, or you can ask for it by name. Each one needs the Award Travel Finder MCP connector. The same skills show up as MCP prompts (slash commands) in any client that supports prompts. Full list: [awardtravelfinder.com/mcp/skills](https://awardtravelfinder.com/mcp/skills).
+
+| Skill | What it does |
+|-------|--------------|
+| `plan-award-trip` | Route and dates to a bookable award, with transfer path, hold plan and booking steps |
+| `where-can-my-points-take-me` | 3-5 award trips you can afford with the points you hold |
+| `book-award-step-by-step` | Safe booking checklist: confirm space, hold, transfer, ticket |
+| `maximize-transfer-bonus` | Is a live transfer bonus worth using, and how many points to move |
+| `check-trip-before-departure` | Pre-flight brief: seat, lounges, wifi, airport waits, reprice check |
+| `hotel-price-drop-rebook` | Track an award hotel stay and rebook when the points rate drops |
+| `missing-points-claim` | Audit a hotel folio and write the missing-points or dispute claim |
+| `status-match-and-challenge` | Cheapest path to an elite tier: match, challenge, earn or run |
+| `audit-my-portfolio` | Value every balance and flag idle or expiring points |
+| `next-credit-card` | Pick the next travel card from your spend and goals |
+| `family-or-group-trip` | Award seats for 2+ travellers and how to split the points |
+| `weekly-deal-review` | Weekly digest of bonuses, points sales and seats on your routes |
+| `set-up-alerts` | Route monitors, hotel price tracking and standing orders |
+| `cancel-or-change-award` | Cancel or change fee, where points go, and whether to rebook |
+
 ## Coverage
 
 **28 airlines** can be searched one at a time with `search_availability`:
@@ -125,6 +146,7 @@ mcp/
     compare-programs.md  # /atf:compare-programs
   skills/
     award-travel/        # Activates on award-travel questions
+    plan-award-trip/     # ...and the 14 task skills listed above
   openclaw/
     SKILL.md             # OpenClaw-flavoured variant of the same skill
 ```
