@@ -1,0 +1,34 @@
+{
+  "name": "award-travel-finder",
+  "version": "1.1.0",
+  "description": "Award Travel Finder plugin for ChatGPT and Codex. Search award flight availability across 28 airline programmes, award-chart pricing for 23 loyalty programs, transfer paths, elite-status progress and award nights at Marriott, Hilton, IHG and Hyatt.",
+  "author": {
+    "name": "Award Travel Finder",
+    "url": "https://awardtravelfinder.com"
+  },
+  "homepage": "https://awardtravelfinder.com/mcp",
+  "repository": "https://github.com/AwardTravelFinder/mcp",
+  "license": "MIT",
+  "keywords": ["travel", "flights", "award-travel", "points", "miles", "loyalty"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Award Travel Finder",
+    "shortDescription": "Find award flights with points",
+    "longDescription": "Search award seat availability across 28 airline programmes in a single query and look up award-chart pricing for 23 loyalty programs. Compare transfer paths from credit-card points into airline programs, track elite-status progress, keep points balances and bookings in one place, and find award nights at Marriott, Hilton, IHG and Hyatt. Open it from the sidebar to see your balances, upcoming trips and route alerts. Sign in with your Award Travel Finder account in the browser; a free account covers everyday trip planning.",
+    "developerName": "Merchant Software Solutions Limited",
+    "category": "Travel",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://awardtravelfinder.com",
+    "supportURL": "https://awardtravelfinder.com/contact",
+    "privacyPolicyURL": "https://awardtravelfinder.com/privacy",
+    "termsOfServiceURL": "https://awardtravelfinder.com/terms-of-service",
+    "defaultPrompt": [
+      "Find business class award seats from London to New York next month and tell me which points to use."
+    ],
+    "composerIcon": "./assets/composer-icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [],
+    "brandColor": "#7C3AED"
+  }
+}
